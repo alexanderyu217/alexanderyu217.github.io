@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: lightblue;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+a {
+    color: darkcyan
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red
+}
+
+.icon {
+    max-width:30px; 
+    height:auto;
+}
+
+.margin {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+p {
+    height: 100%;
+    margin: auto;
+}
+
+.page-nav {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 9999;
+    width: 10%;
+}
+
+.nav-links {
+    color: white;
+    font-size: 15px;
+}
+
+.prof-links {
+    /* background: purple; */
+    bottom: 40%;
+    left: 15%;
+    position: fixed;
+}
+
+.center {
+    background: black;
+    margin: auto;
+    padding-top: 15%;
+    padding-left: 15%;
+    text-align: left;
+    color: white; 
+    font-size: 30px;
+    width: 70%;
+    position: fixed;
+}
+
+.page {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.page-paragraph {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    color: white; 
+    font-size: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+}
+
+.header {
+    /* background: blue; */
+    margin: auto;
+    text-align: left;
+    color: white; 
+    font-size: 50px;
+}
+
+.fixed-header {
+    /* background: blue; */
+    margin: 0;
+    display: block;
+    position: fixed;
+    top:0;
+    left:0;
+    text-align: left;
+    color: white; 
+}
+
