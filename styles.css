@@ -1,11 +1,15 @@
-html {
+html::-webkit-scrollbar{
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    display: none;
 }
 
 body {
     background: lightblue;
     width: 100vw;
     margin: auto;
+    scrollbar-color: lightblue;
+
     /* overflow: hidden; */
 }
 
