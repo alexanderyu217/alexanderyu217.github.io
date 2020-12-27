@@ -1,4 +1,4 @@
-const thresh = .5;
+const thresh = .25;
 const pageNames = ["about", "skills", "experience", "projects", "contact"];
 
 const navAdjust = function(event) {
@@ -64,5 +64,19 @@ const navPointer = function(event) {
     }
 }
 
+const adjustIcons = function(event) {
+    var currY = window.scrollY;
+    var height = window.innerHeight;
+    var icons = document.querySelector(".icons");
+    if (currY < thresh * height) {
+        icons.style.left = String(15 * (thresh * height - currY) / (thresh * height) + 1) + "%";
+        icons.style.bottom = String(44 * (thresh * height - currY) / (thresh * height) + 1) + "%";
+    } else {
+        icons.style.left = "1%";
+        icons.style.bottom = "1%";
+    }
+}
+
 window.addEventListener("scroll", navAdjust);
 window.addEventListener("scroll", navPointer);
+window.addEventListener("scroll", adjustIcons);

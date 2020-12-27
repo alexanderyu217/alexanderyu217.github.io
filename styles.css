@@ -1,15 +1,12 @@
-html::-webkit-scrollbar{
+html{
     scroll-behavior: smooth;
-    display: none;
+    overflow-x: hidden;
 }
 
 body {
     background: lightblue;
     width: 100vw;
-    margin: auto;
-    scrollbar-color: lightblue;
-
-    /* overflow: hidden; */
+    font-family: "Courier New", monospace;
 }
 
 a:hover {
@@ -24,10 +21,37 @@ a:hover {
 .page {
     width: 100vw;
     height: 100vh;
+    padding: 0;
+    border: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.home-content {
+    width: 70vw;
+    height: 50vh;
+    margin: auto;
+    /* background: black; */
+    /* opacity: .5; */
+    position: relative;
+}
+
+.home-hi {
+    color: black;
+}  
+
+.home-name {
+    color: white;
+    font-size: 12.5vh;
+}
+
+.home-about {
+    color: gray;
+    font-size: 5vh;
 }
 
 .nav-bar {
-    /* background: black; */
     position: fixed;
     margin-left: 15%;
     margin-right: 15%;
@@ -45,7 +69,7 @@ a:hover {
     position: relative;
     text-decoration: none;
     color: green;
-    font-family: "Courier New", monospace;
+    font-family: inherit;
     font-size: 1.5vw;
     display: none;
 }
@@ -74,8 +98,10 @@ a:hover {
 
 .icons {
     position: fixed;
-    left: 1%;
-    bottom: 1%;
+    left: 16%;
+    bottom: 45%;
+    z-index: 2;
+    display: block;
 }
 
 .icon {
