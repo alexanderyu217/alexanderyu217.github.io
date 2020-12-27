@@ -1,10 +1,11 @@
-const thresh = .25;
+const navThresh = .25;
+const iconThresh = .05;
 const pageNames = ["about", "skills", "experience", "projects", "contact"];
 
 const navAdjust = function(event) {
     height = window.innerHeight;
     currY = window.scrollY;
-    if (currY > height * thresh) {
+    if (currY > height * navThresh) {
         var elems = document.querySelectorAll('.nav-bar');
         for (var i = 0; i < elems.length; i++) {
             elems[i].style.width = "15%";
@@ -18,12 +19,12 @@ const navAdjust = function(event) {
         for (var i = 0; i < elems.length; i++) {
             elems[i].style.fontSize = "1.5vw";
             elems[i].style.textAlign = "right";
-            elems[i].style.opacity = Math.abs((height * thresh) - currY)/(height * thresh);
+            elems[i].style.opacity = Math.abs((height * navThresh) - currY)/(height * navThresh);
         }
         var elems = document.querySelectorAll('.home-link');
         for (var i = 0; i < elems.length; i++) {
             elems[i].style.display = "block";
-            elems[i].style.opacity = Math.abs((height * thresh) - currY)/(height * thresh);
+            elems[i].style.opacity = Math.abs((height * navThresh) - currY)/(height * navThresh);
         }
     } else {
         var elems = document.querySelectorAll('.nav-bar');
@@ -39,12 +40,12 @@ const navAdjust = function(event) {
         for (var i = 0; i < elems.length; i++) {
             elems[i].style.fontSize = "2.5vw";
             elems[i].style.textAlign = "left";
-            elems[i].style.opacity = Math.abs((height * thresh) - currY)/(height * thresh);
+            elems[i].style.opacity = Math.abs((height * navThresh) - currY)/(height * navThresh);
         }
         var elems = document.querySelectorAll('.home-link');
         for (var i = 0; i < elems.length; i++) {
             elems[i].style.display = "none";
-            elems[i].style.opacity = Math.abs((height * thresh) - currY)/(height * thresh);
+            elems[i].style.opacity = Math.abs((height * navThresh) - currY)/(height * navThresh);
         }
     }
 }
@@ -68,12 +69,24 @@ const adjustIcons = function(event) {
     var currY = window.scrollY;
     var height = window.innerHeight;
     var icons = document.querySelector(".icons");
-    if (currY < thresh * height) {
-        icons.style.left = String(15 * (thresh * height - currY) / (thresh * height) + 1) + "%";
-        icons.style.bottom = String(44 * (thresh * height - currY) / (thresh * height) + 1) + "%";
+    if (currY < iconThresh * height) {
+        icons.style.left = String(15 * (iconThresh * height - currY) / (iconThresh * height) + 1) + "%";
+        icons.style.bottom = String(40 * (iconThresh * height - currY) / (iconThresh * height) + 1) + "%";
     } else {
         icons.style.left = "1%";
         icons.style.bottom = "1%";
+    }
+    var icons = document.querySelectorAll(".icon");
+    if (currY < iconThresh * height) {
+        for (var i = 0; i < icons.length; i++) {
+            icons[i].style.maxHeight = String(2 * (iconThresh * height - currY) / (iconThresh * height) + 2.5) + "%";
+            icons[i].style.maxWidth = String(2 * (iconThresh * height - currY) / (iconThresh * height) + 2.5) + "%";
+        }
+    } else {
+        for (var i = 0; i < icons.length; i++) {
+            icons[i].style.maxHeight = "2.5%";
+            icons[i].style.maxWidth = "2.5%";
+        }
     }
 }
 

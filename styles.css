@@ -21,6 +21,7 @@ a:hover {
 .page {
     width: 100vw;
     height: 100vh;
+    top: 0;
     padding: 0;
     border: 0;
     display: flex;
@@ -99,12 +100,18 @@ a:hover {
 .icons {
     position: fixed;
     left: 16%;
-    bottom: 45%;
+    bottom: 41%;
     z-index: 2;
     display: block;
 }
 
 .icon {
-    max-height: 2.5%;
-    max-width: 2.5%;
+    max-height: 4.5%;
+    max-width: 4.5%;
+}
+
+.icon:hover {
+    border-radius: 10%;
+    border-color: lightblue;
+    border-style: solid;
 }
