@@ -13,11 +13,6 @@ a:hover {
     color: black;
 }
 
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
-  }
-
 .page {
     width: 100vw;
     height: 100vh;
@@ -39,6 +34,7 @@ a:hover {
 }
 
 .home-hi {
+    font-size: 2vh;
     color: black;
 }  
 
