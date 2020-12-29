@@ -59,6 +59,66 @@ a:hover {
     display: flex;
 }
 
+.about-content {
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    /* background: green; */
+}
+
+.about-photo {
+    max-height: 100%;
+    float: left;
+}
+
+.about-nav {
+    height: 5%;
+    /* background: blue; */
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 125%;
+
+}
+
+.about-nav>div {
+    position: relative;
+    display: block;
+    color: green;
+}
+
+.about-div {
+    position: relative;
+    display: block;
+    color: green;
+    cursor: pointer; 
+}
+
+.about-div:hover {
+    color: black;
+}
+
+.about-text {
+    height: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.about-text>p {
+    padding-left: 2%;
+    font-size: 140%;
+}
+
+.about-text>p>a {
+    text-decoration: none;
+    color: green;
+    font-size: 100%;
+}
+
+.about-text>p>a:hover {
+    color: red;
+}
+
 .home-link {
     opacity: 1;
     text-orientation: upright;
