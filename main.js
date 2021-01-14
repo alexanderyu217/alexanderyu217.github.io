@@ -110,61 +110,34 @@ const skillsProgramming = function(event) {
     <div class="skills-list-column">
         <div class="skill">
             Python 
-            <svg class="skill-level">
-                <circle class="skill-90" id="python"/>
-            </svg>
         </div>
         <div class="skill">
             Java
-            <svg class="skill-level">
-                <circle class="skill-80" id="java"/>
-            </svg>
         </div>
         <div class="skill">
             C
-            <svg class="skill-level">
-                <circle class="skill-80" id="c"/>
-            </svg>
         </div>
     </div>
     <div class="skills-list-column">
         <div class="skill">
             JavaScript
-            <svg class="skill-level">
-                <circle class="skill-70" id="javascript"/>
-            </svg>
         </div>
         <div class="skill">
             SQL
-            <svg class="skill-level">
-                <circle class="skill-60" id="sql"/>
-            </svg>
         </div>
         <div class="skill">
             RISC-V
-            <svg class="skill-level">
-                <circle class="skill-80" id="risc-v"/>
-            </svg>
         </div>
     </div>
     <div class="skills-list-column">
         <div class="skill">
             MATLAB
-            <svg class="skill-level">
-                <circle class="skill-80" id="matlab"/>
-            </svg>
         </div>
         <div class="skill">
             Lua
-            <svg class="skill-level">
-                <circle class="skill-70" id="lua"/>
-            </svg>
         </div>
         <div class="skill">
             Perl
-            <svg class="skill-level">
-                <circle class="skill-60" id="perl"/>
-            </svg>
         </div>
     </div>
     `
@@ -176,25 +149,16 @@ const skillsHardware = function(event) {
     <div class="skills-list-column">
         <div class="skill">
             Fusion 360 
-            <svg class="skill-level">
-                <circle class="skill-90" id="fusion"/>
-            </svg>
         </div>
     </div>
     <div class="skills-list-column">
         <div class="skill">
             SOLIDWORKS
-            <svg class="skill-level">
-                <circle class="skill-80" id="solidworks"/>
-            </svg>
         </div>
     </div>
     <div class="skills-list-column">
         <div class="skill">
             KiCad
-            <svg class="skill-level">
-                <circle class="skill-60" id="kicad"/>
-            </svg>
         </div>
     </div>
     ` 
@@ -209,21 +173,12 @@ const skillsOther = function(event) {
         </div>
         <div class="skill">
             English 
-            <svg class="skill-level">
-                <circle class="skill-100" id="english"/>
-            </svg>
         </div>
         <div class="skill">
             Chinese
-            <svg class="skill-level">
-                <circle class="skill-90" id="chinese"/>
-            </svg>
         </div>
         <div class="skill">
             Spanish
-            <svg class="skill-level">
-                <circle class="skill-70" id="spanish"/>
-            </svg>
         </div>
     </div>
     <div class="skills-list-column">
@@ -232,15 +187,9 @@ const skillsOther = function(event) {
         </div>
         <div class="skill">
             Video Editing
-            <svg class="skill-level">
-                <circle class="skill-80" id="editing"/>
-            </svg>
         </div>
         <div class="skill">
             Photography 
-            <svg class="skill-level">
-                <circle class="skill-60" id="python"/>
-            </svg>
         </div>
     </div>
     <div class="skills-list-column">
@@ -249,21 +198,12 @@ const skillsOther = function(event) {
         </div>
         <div class="skill">
             Skiing
-            <svg class="skill-level">
-                <circle class="skill-70" id="skiing"/>
-            </svg>
         </div>
         <div class="skill">
             Rock Climbing
-            <svg class="skill-level">
-                <circle class="skill-80" id="rock"/>
-            </svg>
         </div>
         <div class="skill">
             Poker
-            <svg class="skill-level">
-                <circle class="skill-60" id="poker"/>
-            </svg>
         </div>
     </div>
     ` 
