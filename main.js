@@ -92,7 +92,7 @@ const adjustIcons = function(event) {
 
 const aboutGeneral = function(event) {
     document.getElementById("profile-photo").src = "media/profile.jpeg";
-    document.getElementById("about-text").innerHTML = "Hi! I'm Alex, an engineering student at UC Berkeley who loves building things.<br/><br/>I'm a super hands-on type of learner who's constantly looking for opportunities to tackle new challenges and solve problems.<br/><br/>In my free time I love rock climbing, skiing, playing poker, and hanging out with friends. I've also started dabbling in photography and video editing.";
+    document.getElementById("about-text").innerHTML = "                        Hi! I'm Alex, an engineering student at UC Berkeley who loves building things.<br/><br/>I'm a super hands-on learner who's constantly looking for opportunities to tackle new challenges and solve problems.<br/><br/>In my free time I love rock climbing, skiing, playing poker, and hanging out with friends. I've also started dabbling in photography and video editing  (Incoming YouTube channel?).";
 }
 
 const aboutWushu = function(event) {
@@ -105,9 +105,176 @@ const aboutEngineering = function(event) {
     document.getElementById("about-text").innerHTML = "My passion for engineering started when I was very young. I've loved building things for as long as I can remember. I grew up doing things like Science Olympiad and robotics.<br/><br/>In my freshman year of college, I joined Berkeley Formula Racing where I was a member of the electrical department. <br/><br>Currently, I'm pursuing my passion for engineering through personal projects and I'm an incoming Engineering Intern at <a href='https://www.sofi.com/' target='_blank'>SoFi</a>.";
 }
 
+const skillsProgramming = function(event) {
+    document.getElementById("skills-list").innerHTML = `
+    <div class="skills-list-column">
+        <div class="skill">
+            Python 
+            <svg class="skill-level">
+                <circle class="skill-90" id="python"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Java
+            <svg class="skill-level">
+                <circle class="skill-80" id="java"/>
+            </svg>
+        </div>
+        <div class="skill">
+            C
+            <svg class="skill-level">
+                <circle class="skill-80" id="c"/>
+            </svg>
+        </div>
+    </div>
+    <div class="skills-list-column">
+        <div class="skill">
+            JavaScript
+            <svg class="skill-level">
+                <circle class="skill-70" id="javascript"/>
+            </svg>
+        </div>
+        <div class="skill">
+            SQL
+            <svg class="skill-level">
+                <circle class="skill-60" id="sql"/>
+            </svg>
+        </div>
+        <div class="skill">
+            RISC-V
+            <svg class="skill-level">
+                <circle class="skill-80" id="risc-v"/>
+            </svg>
+        </div>
+    </div>
+    <div class="skills-list-column">
+        <div class="skill">
+            MATLAB
+            <svg class="skill-level">
+                <circle class="skill-80" id="matlab"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Lua
+            <svg class="skill-level">
+                <circle class="skill-70" id="lua"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Perl
+            <svg class="skill-level">
+                <circle class="skill-60" id="perl"/>
+            </svg>
+        </div>
+    </div>
+    `
+}
+
+const skillsHardware = function(event) {
+    document.getElementById("skills-list").innerHTML =
+    `
+    <div class="skills-list-column">
+        <div class="skill">
+            Fusion 360 
+            <svg class="skill-level">
+                <circle class="skill-90" id="fusion"/>
+            </svg>
+        </div>
+    </div>
+    <div class="skills-list-column">
+        <div class="skill">
+            SOLIDWORKS
+            <svg class="skill-level">
+                <circle class="skill-80" id="solidworks"/>
+            </svg>
+        </div>
+    </div>
+    <div class="skills-list-column">
+        <div class="skill">
+            KiCad
+            <svg class="skill-level">
+                <circle class="skill-60" id="kicad"/>
+            </svg>
+        </div>
+    </div>
+    ` 
+}
+
+const skillsOther = function(event) {
+    document.getElementById("skills-list").innerHTML =
+    `
+    <div class="skills-list-column">
+        <div class="skill-header">
+            Languages
+        </div>
+        <div class="skill">
+            English 
+            <svg class="skill-level">
+                <circle class="skill-100" id="english"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Chinese
+            <svg class="skill-level">
+                <circle class="skill-90" id="chinese"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Spanish
+            <svg class="skill-level">
+                <circle class="skill-70" id="spanish"/>
+            </svg>
+        </div>
+    </div>
+    <div class="skills-list-column">
+        <div class="skill-header">
+            Media
+        </div>
+        <div class="skill">
+            Video Editing
+            <svg class="skill-level">
+                <circle class="skill-80" id="editing"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Photography 
+            <svg class="skill-level">
+                <circle class="skill-60" id="python"/>
+            </svg>
+        </div>
+    </div>
+    <div class="skills-list-column">
+        <div class="skill-header">
+            For fun :P
+        </div>
+        <div class="skill">
+            Skiing
+            <svg class="skill-level">
+                <circle class="skill-70" id="skiing"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Rock Climbing
+            <svg class="skill-level">
+                <circle class="skill-80" id="rock"/>
+            </svg>
+        </div>
+        <div class="skill">
+            Poker
+            <svg class="skill-level">
+                <circle class="skill-60" id="poker"/>
+            </svg>
+        </div>
+    </div>
+    ` 
+}
+
 window.addEventListener("scroll", navAdjust);
 window.addEventListener("scroll", navPointer);
 window.addEventListener("scroll", adjustIcons);
 document.getElementById("about-general").addEventListener("click", aboutGeneral);
 document.getElementById("about-wushu").addEventListener("click", aboutWushu);
 document.getElementById("about-engineering").addEventListener("click", aboutEngineering);
+document.getElementById("skills-programming").addEventListener("click", skillsProgramming);
+document.getElementById("skills-hardware").addEventListener("click", skillsHardware);
+document.getElementById("skills-other").addEventListener("click", skillsOther);

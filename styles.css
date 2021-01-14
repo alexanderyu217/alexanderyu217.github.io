@@ -119,6 +119,153 @@ a:hover {
     color: red;
 }
 
+.skills-content {
+    /* background: white;
+    opacity: .5; */
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+    margin: auto;
+}
+
+.skills-nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 125%;
+}
+
+.skills-nav>div {
+    position: relative;
+    display: block;
+    color: green;
+}
+
+.skills-div {
+    position: relative;
+    display: block;
+    color: green;
+    cursor: pointer; 
+}
+
+.skills-div:hover {
+    color: black;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    /* background: blue;
+    opacity: .5; */
+    width: 100%;
+    padding-top: 10%;
+    height: 50%;
+}
+
+.skills-list-column {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    /* background: brown;  */
+    /* opacity:     .5; */
+}
+
+.skill {
+    display: block;
+    position: relative;
+    font-size: 150%;
+    margin: auto;
+}
+
+.skill-header {
+    display: block;
+    position: relative;
+    font-size: 200%;
+    margin: auto;
+    color: white;
+}
+
+.skill-level {
+    width: 30px;
+    height: 30px;
+    /* position: relative;
+    display: inline-block;*/
+    transform: translate(-10px, 5px);
+}
+
+.skill-level>circle {
+    r: 12px;
+    cx: 15px;
+    cy: 15px;
+    fill: lightblue;
+    stroke: black;
+    stroke-width: 5px;
+    stroke-dasharray: 75;
+    stroke-dashoffset: 75;
+}
+
+.skill-50 {
+    animation: dash-50 .5s linear forwards;
+}
+
+@keyframes dash-50 {
+    to {
+        stroke-dashoffset: 37;
+    }
+}
+
+.skill-60 {
+    animation: dash-60 .5s linear forwards;
+}
+
+@keyframes dash-60 {
+    to {
+        stroke-dashoffset: 30;
+    }
+}
+
+.skill-70 {
+    animation: dash-70 .5s linear forwards;
+}
+
+@keyframes dash-70 {
+    to {
+        stroke-dashoffset: 22;
+    }
+}
+
+.skill-80 {
+    animation: dash-80 .5s linear forwards;
+}
+
+@keyframes dash-80 {
+    to {
+        stroke-dashoffset: 15;
+    }
+}
+
+.skill-90 {
+    animation: dash-90 .5s linear forwards;
+}
+
+@keyframes dash-90 {
+    to {
+        stroke-dashoffset: 8;
+    }
+}
+
+.skill-100 {
+    animation: dash-100 .5s linear forwards;
+}
+
+@keyframes dash-100 {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 .home-link {
     opacity: 1;
     text-orientation: upright;
