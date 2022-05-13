@@ -189,7 +189,7 @@ const skillsOther = function(event) {
             Video Editing
         </div>
         <div class="skill">
-            Photography 
+            <a href="photography.html>Photography<a>
         </div>
     </div>
     <div class="skills-list-column">
